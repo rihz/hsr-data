@@ -1,0 +1,26 @@
+{
+  "name": "hsr-data",
+  "version": "1.0.0",
+  "description": "<br />\r <p align=\"center\">\r   <a href=\"https://github.com/reko-beep/hsr-data\">\r     <img src=\"https://raw.githubusercontent.com/reko-beep/hsr-data/dev/logo.png?raw=true\" alt=\"Logo\">\r   </a>\r <!-- \r    <h3 align=\"center\">hsr-data</h3> -->",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reko-beep/hsr-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reko-beep/hsr-data/issues"
+  },
+  "homepage": "https://github.com/reko-beep/hsr-data#readme",
+  "dependencies": {
+    "mongoose": "^8.0.3",
+    "ts-node": "^10.9.1"
+  }
+}
