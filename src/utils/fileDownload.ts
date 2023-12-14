@@ -53,3 +53,18 @@ export const downloadLightConeImages = (cone: any, cleanName: string, override =
 
   console.log(`Finished downloading ${downloadCount} images for ${cleanName}`);
 };
+
+export const downloadRelicImages = (relicPiece: any, override = false): void => {
+  const { iconPath, cleanName } = relicPiece;
+
+  const iconUrl = `${baseUrl}/${iconPath}.webp`;
+  const iconFilePath = `${imageDirectory}/${cleanName}_art.webp`;
+  let downloadCount = 0;
+
+  if (!fs.existsSync(iconFilePath) || override) {
+    downloadWebpFile(iconUrl, iconFilePath);
+    downloadCount++;
+  }
+
+  console.log(`Finished downloading ${downloadCount} images for ${cleanName}`);
+}

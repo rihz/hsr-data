@@ -2,11 +2,14 @@ import * as http from 'http';
 import { connect, disconnect } from 'mongoose';
 import { etlCharacters } from './src/characters';
 import { etlLightCones } from './src/cones';
+import { etlRelics } from './src/relics';
 
 type Etl = (() => Promise<void>);
+// TODO: Add EtlConfig to set things like overwrite. Pass it in line 21
 const etls: Etl[] = [
   etlCharacters,
-  etlLightCones
+  etlLightCones,
+  etlRelics
 ];
 
 (async () => {

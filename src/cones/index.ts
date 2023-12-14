@@ -96,7 +96,7 @@ export const etlLightCones = async () => {
     const stats = calculateLightConeStats(cone);
     const ability = extractAbility(cone);
 
-    downloadLightConeImages(cone, cleanName, true);
+    downloadLightConeImages(cone, cleanName, false);
 
     const etlCone: HsrLightCone = {
       name,
@@ -111,7 +111,7 @@ export const etlLightCones = async () => {
     mongoOps.push({
       updateOne: {
         filter: { cleanName },
-        update: { $set: { etlCone } },
+        update: { $set: { ...etlCone } },
         upsert: true
       }
     });
