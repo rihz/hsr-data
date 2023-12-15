@@ -1,4 +1,3 @@
-import * as http from 'http';
 import { connect, disconnect } from 'mongoose';
 import { etlCharacters } from './src/characters';
 import { etlLightCones } from './src/cones';

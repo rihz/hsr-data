@@ -8,3 +8,4 @@ venv/
 /docs/
 /node_modules
 /images
+/dist
