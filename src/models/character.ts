@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import { HsrDamageType } from "./damage";
 import { HsrPath } from "./path";
 
-export enum HsrCharacterAbilityType {
+export const enum HsrCharacterAbilityType {
   Basic = 'basic atk',
   Skill = 'skill',
   Ultimate = 'ultimate',

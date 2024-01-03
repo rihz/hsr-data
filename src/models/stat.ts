@@ -1,4 +1,4 @@
-export enum HsrStat {
+export const enum HsrStat {
   HP = 'hp',
   ATK = 'atk',
   DEF = 'def',

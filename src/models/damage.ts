@@ -1,4 +1,4 @@
-export enum HsrDamageType {
+export const enum HsrDamageType {
   Physical = 'physical',
   Fire = 'fire',
   Ice = 'ice',

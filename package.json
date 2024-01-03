@@ -1,9 +1,9 @@
 {
   "name": "hsr-models",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "<br />\r <p align=\"center\">\r   <a href=\"https://github.com/reko-beep/hsr-data\">\r     <img src=\"https://raw.githubusercontent.com/reko-beep/hsr-data/dev/logo.png?raw=true\" alt=\"Logo\">\r   </a>\r <!-- \r    <h3 align=\"center\">hsr-data</h3> -->",
-  "main": "./dist/models.js",
-  "types": "./dist/models.d.ts",
+  "main": "models.js",
+  "types": "models.d.ts",
   "directories": {
     "test": "tests"
   },

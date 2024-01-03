@@ -1,4 +1,4 @@
-export enum HsrPath {
+export const enum HsrPath {
     Preservation = 'preservation',
     Destruction = 'destruction',
     Hunt = 'hunt',

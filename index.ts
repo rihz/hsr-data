@@ -2,6 +2,7 @@ import { connect, disconnect } from 'mongoose';
 import { etlCharacters } from './src/characters';
 import { etlLightCones } from './src/cones';
 import { etlRelics } from './src/relics';
+import { downloadDamageTypeImages, downloadPathImages } from './src/utils/fileDownload';
 
 type Etl = (() => Promise<void>);
 // TODO: Add EtlConfig to set things like overwrite. Pass it in line 21
@@ -19,6 +20,9 @@ const etls: Etl[] = [
     for (const etl of etls) {
       await etl();
     }
+
+    downloadPathImages();
+    downloadDamageTypeImages();
 
     await disconnect();
     console.log('Finished running ETLs.');

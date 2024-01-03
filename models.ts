@@ -1,3 +1,36 @@
-const models = require('./src/models');
+import {
+    HsrCharacter,
+    HsrCharacterAbility,
+    HsrCharacterAbilityType,
+    HsrCharacterEidolon,
+    HsrDamageType,
+    HsrPath,
+    HsrStat,
+    HsrLightCone,
+    HsrLightConeAbility,
+    HsrLightConeStats,
+    HsrRelicType,
+    HsrRelicAbility,
+    HsrRelicPiece,
+    HsrRelic
+} from './src/models';
 
-module.exports = models;
+export type {
+    HsrCharacter,
+    HsrCharacterAbility,
+    HsrCharacterEidolon,
+    HsrLightCone,
+    HsrLightConeAbility,
+    HsrLightConeStats,
+    HsrRelicAbility,
+    HsrRelicPiece,
+    HsrRelic
+};
+
+export {
+    HsrCharacterAbilityType,
+    HsrDamageType,
+    HsrPath,
+    HsrStat,
+    HsrRelicType
+};

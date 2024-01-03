@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 import { HsrStat } from "./stat";
 
-export enum HsrRelicType {
+export const enum HsrRelicType {
   Head = 'head',
   Hands = 'hands',
   Body = 'body',
